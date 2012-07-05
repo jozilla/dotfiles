@@ -1,6 +1,9 @@
-" Backspace troubles
+" Use vim to its full potential (nocompatible)
 set nocp
+" Allow backspace in insert mode 
 set bs=2
+" Use the OS clipboard 
+set clipboard=unnamed
 
 " Searching
 set showmatch
@@ -8,6 +11,13 @@ set incsearch
 set ignorecase smartcase
 " Ignore case for file expansion
 set wildignorecase 
+" Enhance vim command-line completion
+set wildmenu
+
+" Always show status line
+set laststatus=2
+set showmode
+set title
 
 " Encoding (default to UTF-8)
 set encoding=utf-8
