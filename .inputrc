@@ -1,0 +1,2 @@
+# use case-insensitive expansion
+set completion-ignore-case on
