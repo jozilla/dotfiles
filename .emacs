@@ -7,15 +7,15 @@
 (require 'color-theme-solarized)
 (color-theme-solarized-light)
 
-;; use spaces
+;; Use spaces
 (setq c-basic-offset 4)
 (setq tab-width 4)
 (setq indent-tabs-mode nil)
 
-;; start server
+;; Start server
 (server-start)
 
-;; custom settings
+;; Custom settings
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.

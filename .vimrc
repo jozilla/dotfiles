@@ -1,30 +1,30 @@
-" backspace troubles
+" Backspace troubles
 set nocp
 set bs=2
 
-" searching
+" Searching
 set showmatch
 set incsearch
 set ignorecase smartcase
-" ignore case for file expansion
+" Ignore case for file expansion
 set wildignorecase 
 
-" encoding (default to UTF-8)
+" Encoding (default to UTF-8)
 set encoding=utf-8
 
-" set directory for swap/temp files
+" Set directory for swap/temp files
 set directory=.,$TEMP
 
 
-" don't use Ex mode, use Q for (re)formatting
-" reflow para with Q
+" Don't use Ex mode, use Q for (re)formatting
+" Reflow para with Q
 nnoremap Q gqap
-" reflow selected with Q in visual mode
+" Reflow selected with Q in visual mode
 vnoremap Q gq
 imap <M-F> <esc>:gqip<CR>
 map <M-F> <esc>:gqip<CR>
 
-" word wrapping
+" Word wrapping
 set textwidth=79 "or 70
 set tabstop=4
 set expandtab
@@ -32,10 +32,10 @@ set shiftwidth=4
 set smarttab autoindent
 set showbreak="+ "
 
-" spell check
+" Spell check
 set spell spelllang=en_gb,nl
 if !has("gui_running")
-  "spell checking colors are quite annoying in console mode
+  " Spell checking colors are quite annoying in console mode
   hi clear SpellBad
   hi SpellBad cterm=underline "ctermfg=DarkRed 
   hi clear SpellLocal
@@ -44,7 +44,7 @@ if !has("gui_running")
   hi SpellCap cterm=underline "ctermfg=LightRed 
 endif
 
-" color scheme
+" Color scheme
 syntax on
 if has("gui_running")
     colorscheme solarized
